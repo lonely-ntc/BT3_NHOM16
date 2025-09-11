@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/edtSuaTen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Họ tên" />
+
+    <Spinner
+        android:id="@+id/spnSuaChucVu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- Quản lý -->
+    <EditText
+        android:id="@+id/edtSuaCapBac"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Cấp bậc (1-5)"
+        android:inputType="number"
+        android:visibility="gone" />
+
+    <!-- Tester -->
+    <RadioGroup
+        android:id="@+id/rgSuaTester"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <RadioButton
+            android:id="@+id/rbSuaHeThong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hệ thống" />
+
+        <RadioButton
+            android:id="@+id/rbSuaChucNang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chức năng" />
+    </RadioGroup>
+
+    <!-- Lập trình viên -->
+    <EditText
+        android:id="@+id/edtSuaNamKN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Năm kinh nghiệm"
+        android:inputType="number"
+        android:visibility="gone" />
+
+</LinearLayout>
